@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    position: relative;
+    margin: 100px auto 0;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: move 6s ease infinite forwards;
+    backface-visibility: hidden;
+    /* perspective: 200px; */
+}
+.wrapper div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0.7;
+}
+.wrapper div.item1{
+    background-color: red;
+    transform: rotateY(0deg) translateZ(-100px);
+}
+.wrapper div.item2{
+    background-color: deeppink;
+    transform: rotateY(60deg) translateZ(-100px);
+}
+.wrapper div.item3{
+    background-color: green;
+    transform: rotateY(120deg) translateZ(-100px);
+    
+    
+}
+.wrapper div.item4{
+    background-color: yellow;
+    transform: rotateY(180deg) translateZ(-100px);
+    
+}
+.wrapper div.item5{
+    background-color: blueviolet;
+    transform: rotateY(240deg) translateZ(-100px);
+    
+}
+.wrapper div.item6{
+    background-color: violet;
+    transform: rotateY(300deg) translateZ(-100px);
+}
+@keyframes move{
+    0%{
+        transform: rotateX(20deg) rotateY(0);
+    }
+    50%{
+        transform: rotateX(-20deg) rotateY(180deg);
+    }
+    100%{
+        transform: rotateX(20deg) rotateY(360deg);
+    }
+}
+
+.wrapper1{
+    position: relative;
+    margin: 300px auto 0;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    animation: move1 3s linear infinite both;
+}
+.wrapper1 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0.8;
+}
+.wrapper1 div.sq1{
+    background-color: red;
+    transform: rotate3d(0,0,0,0) translate3d(0,0,50px);   
+}
+.wrapper1 div.sq2{
+    background-color: blue;
+    transform: rotate3d(1,0,0,90deg) translate3d(0,0,50px);   
+}
+.wrapper1 div.sq3{
+    background-color: blueviolet;
+    transform: rotate3d(0,1,0,90deg) translate3d(0,0,50px);   
+}
+.wrapper1 div.sq4{
+    background-color: blueviolet;
+    transform: rotate3d(0,1,0,90deg) translate3d(0,0,-50px);   
+}
+.wrapper1 div.sq5{
+    background-color: blue;
+    transform: rotate3d(1,0,0,90deg) translate3d(0,0,-50px);    
+}
+.wrapper1 div.sq6{
+    background-color: red;
+    transform: rotate3d(0,0,0,0) translate3d(0,0,-50px);   
+}
+@keyframes move1{
+    0%{
+    }
+    33.33%{
+        transform: rotate3d(0,1,1,90deg);
+    }
+    66.66%{
+        transform: rotate3d(0,1,1,180deg);
+    }
+    100%{
+        transform: rotate3d(0,1,1,360deg);
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            color: inherit;
+        }
+        p{
+            font-size: 14px;
+        }
+        ul,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        .wrapper{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .wrapper ul{
+            display: inline-block;
+            background:linear-gradient(to right,orange,orangered);
+            box-shadow: 1px 2px 2px 0;
+            border-radius: 4px;
+        }
+        .wrapper ul li{
+            margin: 10px 0;
+            display: inline-block;
+            padding: 0 15px;
+            font-size: 16px;
+            line-height: 10px;
+            border-right: 1px dotted white;
+        }
+        .wrapper ul li.last{
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="navList">
+            <li class="navItem" id="home"><a href="#home">Home</a></li>
+            <li class="navItem"><a href="">About me</a></li>
+            <li class="navItem"><a href="">Portfolio</a></li>
+            <li class="navItem"><a href="">Blog</a></li>
+            <li class="navItem"><a href="">Resources</a></li>
+            <li class="last"><a href="">Contact me</a></li>
+        </ul>
+    </div>
+</body>
+</html>
